@@ -8,7 +8,7 @@ var app = express();
 var CLIENT_ID="469295763275586";
 var APP_SECRET="c70d3441f6a7b19d88f0bea0daadf9d0";
 
-var PATH="/home/biar/Desktop/ProgettoReti/prova/prova"
+var PATH="/home/biar/Desktop/ProgettoRetiNuovo/ProgettoRetiNew"
 
 //istanzio una sessione per mantere l' access_token
 app.use(session( {
