@@ -25,7 +25,7 @@ app.use(express.static(PATH+'/public/stylesheets'));
 //variabile globale per la sessione
 var sessione;
 var filmVisti;
-/*
+/*cambioqui
 var url_base;//url base per le immagini
 request.get("http://api.themoviedb.org/3/configuration?api_key=4b10523401b47e7acc9a274b5534d26f", function(error, status, data){
 		url_base= JSON.parse(data).images.base_url;
