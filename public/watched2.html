@@ -2,12 +2,18 @@
 <html lang="en">
 
 <head>
-    <script type="text/javascript">
-    function funzioneLogin(){
-        return location.href="http://localhost:3000/login";
-    }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var stringa= "";
+            $.get("http://localhost:3000/visti", function(res,status){	
+					stringa+=res;			
+					$("#scritte").html(stringa);		 
+            });
+		
+    });
     </script>
-
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,28 +57,51 @@
                 </button>
                 <a class="navbar-brand" href="index.html">ToWatchList</a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="welcome2.html.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="watched2.html">Watched</a>
+                    </li>
+                    <li>
+                        <a href="wishlist.html">Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="recommended.html">Recommended</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/poltrone.jpg')">
+    <header class="intro-header" style="background-image: url('img/film-22.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <br><br>
-                        <h1>Welcome to our application</h1>
-                        <br><br>
-                        <img src="img/facebook.png" onClick="return funzioneLogin()"></img>
-                        <br><br>
+                    <div class="page-heading">
+                        <h1>Watched</h1>
+                        <hr class="small">
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div id=scritte>Questi sono i film:</div>
+                
+            </div>
+        </div>
+    </div>
     <hr>
 
     <!-- Footer -->
@@ -124,3 +153,5 @@
 </body>
 
 </html>
+
+

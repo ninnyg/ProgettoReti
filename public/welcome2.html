@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <script type="text/javascript">
-    function funzioneLogin(){
-        return location.href="http://localhost:3000/login";
-    }
-    </script>
-
+    
+       <script>
+       function funzioneLogout(){
+            location.href="http://localhost:3000/logout"
+           }
+        </script>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,22 +52,38 @@
                 </button>
                 <a class="navbar-brand" href="index.html">ToWatchList</a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="welcome2.html.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="watched2.html">Watched</a>
+                    </li>
+                    <li>
+                        <a href="wishlist.html">Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="recommended.html">Recommended</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/poltrone.jpg')">
+    <header class="intro-header" style="background-image: url('img/film-22.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <br><br>
-                        <h1>Welcome to our application</h1>
-                        <br><br>
-                        <img src="img/facebook.png" onClick="return funzioneLogin()"></img>
-                        <br><br>
+                    <div class="page-heading">
+                        <h1>Home</h1>
+                        <hr class="small">
                     </div>
                 </div>
             </div>
@@ -74,7 +91,9 @@
     </header>
 
     <hr>
-
+    <center>
+    <input type="button" class="rightBotton" value="Logout" onclick="funzioneLogout()"/><br>
+    <a href="https://towatchlist.wordpress.com/2016/04/27/privacy-policy-2/">Privacy Policy</a></center>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -106,7 +125,6 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
         </div>
@@ -124,3 +142,4 @@
 </body>
 
 </html>
+
