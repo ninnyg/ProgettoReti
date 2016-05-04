@@ -33,7 +33,7 @@ request.get("http://api.themoviedb.org/3/configuration?api_key=4b10523401b47e7ac
 
 //get sulla root, rispondo con la pagina html che contiene il bottone di login
 app.get('/', function (req, res) {
-   res.sendFile(PATH+'/public/prova.html');
+   res.sendFile(PATH+'/public/login.html');
 });
 
 
@@ -92,7 +92,7 @@ app.get('/login/confirm',function(req,res){
 });
    
 app.get('/welcomePage', function (req, res) {
-   res.sendFile(PATH+'/public/welcome.html');
+   res.sendFile(PATH+'/public/welcome2.html');
 });
 
 

@@ -4,11 +4,12 @@
   "description": "",
   "main": "./prova/server.js",
   "scripts": {
-  "start": "node ./prova/server.js"
-},
+    "start": "node ./prova/server.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.0.0-rc.3",
     "express": "^5.0.0-alpha.2"
   }
 }
